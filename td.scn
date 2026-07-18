@@ -19,6 +19,7 @@ time 10:30 06:30 19:00 endtime
 
 include td/td_trawa_perony.scm end
 include td/td_drzewa_stacja.scm end
+include td/td_drzewa_obramowka.scm end
 //Zmieniony przez antydziurê Mariusza
 node -1 0 tdo_n5 track normal 100.0 1.435 0.15 25.0 20 0 flat vis
  rail_screw_used1 6 1435mm/tpbps-new2 0.2 0.5 1.1
