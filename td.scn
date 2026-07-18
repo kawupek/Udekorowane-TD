@@ -1,10 +1,10 @@
-//$n Tor doœwiadczalny
+//$n Tor doÅ“wiadczalny
 //$d SCENERIA EKSPERYMENTALNA - NIE DO NORMALNEJ GRY
 //$d =================================================
-//$d Prosta sceneria do nauki, testów i eksperymentów.
+//$d Prosta sceneria do nauki, testÃ³w i eksperymentÃ³w.
 //$d Shift+1-4 ustawianie przebiegu Shift+0 reset przebiegu.
-//$d Shift+5-7 zmiana napiêcia podstacji zasilaj¹cej.
-//$d Shift+8-9 rêczna kontrola przejazdu.
+//$d Shift+5-7 zmiana napiÃªcia podstacji zasilajÂ¹cej.
+//$d Shift+8-9 rÃªczna kontrola przejazdu.
 //$i td.jpg
 //Ra: nowe mapowanie podsypki nie wymaga skalowania tekstury
 //$l Techniczne
@@ -18,7 +18,8 @@ atmo 0 0 0 1000 2000 0 0 0 endatmo
 time 10:30 06:30 19:00 endtime
 
 include td/td_trawa_perony.scm end
-//Zmieniony przez antydziurê Mariusza
+include td/td_drzewa_stacja.scm end
+//Zmieniony przez antydziurÃª Mariusza
 node -1 0 tdo_n5 track normal 100.0 1.435 0.15 25.0 20 0 flat vis
  rail_screw_used1 6 1435mm/tpbps-new2 0.2 0.5 1.1
 0.396851 0.2 36.1112  -2.5  //point 1
@@ -309,7 +310,7 @@ node -1 0 tdo_n286 track normal 94.2475 1.435 0.15 25.0 20 0 flat vis
 600.0
 endtrack
 
-//zmieniony przez antydziurê mariusza
+//zmieniony przez antydziurÃª mariusza
 node -1 0 tdo_n296 track normal 94.2475 1.435 0.15 25.0 20 0 flat vis
  rail_screw_used1 6 1435mm/tpbps-new2 0.2 0.5 1.1
 1192.92 0.2 1630.53  -2.5  //point 1
@@ -1613,7 +1614,7 @@ node -1 0  none traction pwr01 3500 4500 0.01 cu 3.0 1
 0.4 4.0 3 0.04 vis
 endtraction
 
-//Ra: to przês³o jest zasilane bezpoœrednio
+//Ra: to przÃªsÂ³o jest zasilane bezpoÅ“rednio
 include tra/sb165-3k.inc tra/betonrelief1 -0.227 5.845 -11.993 -4.579 end
 node -1 0  none traction pwr1 3500 4500 0.01 cu 3.0 1
 2.1656 5.845 -11.8011
@@ -2339,7 +2340,7 @@ node -1 0 none triangles grass
 endtri
 
 /****************************\
-I  SYGNALIZACJA I WSKANIKI  I
+I  SYGNALIZACJA I WSKAÂNIKI  I
 \****************************/
 
 include ss5zpcpby.inc stacja1_a -2 -0.2 236 180 a-12 stacja1_toa end
@@ -2378,10 +2379,10 @@ include ip/pkp/w17.inc none 2.7 0.0 398.0 90.0 end
 include ip/pkp/w17.inc none 2.7 0.0 1370.0 270.0 end
 include rezonator.inc tdo_rez 0.396851 0.0 36.1112 180 none none end
 
-//Ra: zasilacz sieci trakcyjnej, pod³¹czony tylko do jednego przês³a
+//Ra: zasilacz sieci trakcyjnej, podÂ³Â¹czony tylko do jednego przÃªsÂ³a
 include pkp/odsekc20.inc pwr1 20 0 0 0.0 pkp/odsekc20 3600 0.01 4500 end
 
-//Ra: od³¹cznik sekcyjny - definiuje tylko pr¹d odciêcia sekcji przez podstacjê lub kabinê sekcyjn¹
+//Ra: odÂ³Â¹cznik sekcyjny - definiuje tylko prÂ¹d odciÃªcia sekcji przez podstacjÃª lub kabinÃª sekcyjnÂ¹
 node -1 0 pwr01 tractionpowersource 0 0 0 3400 0 0.01 2000 1.0 3 60.0 section end
 
 /***********************\
@@ -2395,7 +2396,7 @@ event keyctrl02 multiple 0.1 none zwr01- stacja1_a_s13 endevent
 event keyctrl03 multiple 0.1 none zwr02+ stacja1_j-s1 stacja1_k_s2 stacja1_psk1_sp2 stacja1_psk2_sp2 endevent
 event keyctrl04 multiple 0.1 none zwr02- stacja1_j_s10 stacja1_psj1_sp4 stacja1_psj2_sp4 stacja1_k-s1 endevent
 
-//Ra: eventy zmiany napiêcia w sieci trakcyjnej
+//Ra: eventy zmiany napiÃªcia w sieci trakcyjnej
 event keyctrl05 voltage 0.1 pwr1 2400 endevent
 event keyctrl06 voltage 0.1 pwr1 3000 endevent
 event keyctrl07 voltage 0.1 pwr1 3600 endevent
@@ -2403,13 +2404,13 @@ event keyctrl08 multiple 0.1 none przej_1_zamykaj przej_2_zamykaj endevent
 event keyctrl09 multiple 0.1 none przej_1_otwieraj przej_2_otwieraj endevent
 
 /***********************\
-I         SK£AD         I
+I         SKÂ£AD         I
 \***********************/
 
 FirstInit
 
 trainset rozklad start 0.0 0.0
-//$o Sk³ad wygaszony pod wjazdowym.
+//$o SkÂ³ad wygaszony pod wjazdowym.
 node -1 0 EP07-424 dynamic PKP\303E_V1 303E-EP-TV-424-HIST 303E-EP-TV 0 headdriver 35.WH25 0 enddynamic
 node -1 0 51512071081-6 dynamic PKP\11XA_V2 bdnu_2071081-6 111AW-SPOT 0 nobody 115 0 enddynamic
 node -1 0 bdhpumn_50512608068-6 dynamic pkp\bdhpumn_v3 bdhpumn_50512608068-6 BDHPUMN_TAPICERKA_1 0 nobody 115 0 enddynamic
@@ -2418,9 +2419,9 @@ endtrainset
 
 
 trainset td/rozklad tdo_n1734 0.0 0.1
-//$o Sk³ad gotowy na ¿eberku.
+//$o SkÂ³ad gotowy na Â¿eberku.
 endtrainset
 
 trainset 50 d3 0.0 30
-//$o Samochód
+//$o SamochÃ³d
 endtrainset
