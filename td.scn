@@ -1,7 +1,7 @@
 //$n Tor doœwiadczalny
-//$d SCENERIA EKSPERYMENTALNA - NIE DO NORMALNEJ GRY
+//$d SCENERIA W TRAKCIE PRAC
 //$d =================================================
-//$d Prosta sceneria do nauki, testów i eksperymentów.
+//$d Kawupa pojebao z trawkami, sceneria ładuje sie 325463095 godzin XDD
 //$d Shift+1-4 ustawianie przebiegu Shift+0 reset przebiegu.
 //$d Shift+5-7 zmiana napiêcia podstacji zasilaj¹cej.
 //$d Shift+8-9 rêczna kontrola przejazdu.
@@ -20,6 +20,7 @@ time 10:30 06:30 19:00 endtime
 include td/td_trawa_perony.scm end
 include td/td_drzewa_stacja.scm end
 include td/td_drzewa_obramowka.scm end
+includa td/td_trawa_za_peronem.scm end
 //Zmieniony przez antydziurê Mariusza
 node -1 0 tdo_n5 track normal 100.0 1.435 0.15 25.0 20 0 flat vis
  rail_screw_used1 6 1435mm/tpbps-new2 0.2 0.5 1.1
