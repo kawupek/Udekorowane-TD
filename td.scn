@@ -1,13 +1,13 @@
 //$n Tor doœwiadczalny
-//$d SCENERIA W TRAKCIE PRAC
+//$d SCENERIA ŚREDNIEJ JAKOŚCI
 //$d =================================================
-//$d Kawupa pojebao z trawkami, sceneria ładuje sie 325463095 godzin XDD
-//$d Shift+1-4 ustawianie przebiegu Shift+0 reset przebiegu.
-//$d Shift+5-7 zmiana napiêcia podstacji zasilaj¹cej.
-//$d Shift+8-9 rêczna kontrola przejazdu.
+//$d Kawupa pojebao z trawkami wygląda to paskudnie
+//$d Sr za te drzewka w skrajni, kiedyś poprawie, teraz mi sie nie chce XD
+//$d A i postanowiłem że VMAX to bedzie 80 km/h bo tak realistyczniej.
+//$d A no i oczywiście autor dekoracji to niejaki Mały Kawup
 //$i td.jpg
 //Ra: nowe mapowanie podsypki nie wymaga skalowania tekstury
-//$l Techniczne
+//$l Scenerie Kałego Kawupa
 
 /***********************\
 I        POGODA         I
@@ -23,6 +23,7 @@ include td/td_drzewa_obramowka.scm end
 includa td/td_trawa_za_peronem.scm end
 include td/td_trawastacja_2prosta.scm end
 include td/td_trawa_zakret_prosta.scm end
+include td/td_drzewa_zakrety_prosta.scm end
 //Zmieniony przez antydziurê Mariusza
 node -1 0 tdo_n5 track normal 100.0 1.435 0.15 25.0 20 0 flat vis
  rail_screw_used1 6 1435mm/tpbps-new2 0.2 0.5 1.1
